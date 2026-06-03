@@ -1,0 +1,16 @@
+{
+  "actions": {
+    "title": "CV Interactivo",
+    "switch_lang": "🇺🇸 Switch to English",
+    "print": "🖨️ Exportar a PDF / Imprimir"
+  },
+  "sections": {
+    "summary": "Resumen Profesional",
+    "experience": "Experiencia Profesional",
+    "skills": "Habilidades Técnicas",
+    "languages": "Idiomas",
+    "learning": "Aprendizaje Continuo"
+  },
+  "summaryText": "Ingeniero de Software y especialista en UI/UX versátil y orientado a resultados con más de una década de experiencia cerrando la brecha entre un diseño visual excepcional y arquitectura técnica escalable. Historial comprobado en el desarrollo de componentes de alta fidelidad para entornos empresariales críticos, incluyendo sistemas bancarios de prevención de fraudes. Experto en React, TypeScript y herramientas del ecosistema moderno, enfocado en rendimiento, autonomía de producto y experiencias de usuario intuitivas.",
+  "learningText": "Capacitación Avanzada en Arquitectura Frontend y Lógica - Plataformas de la Industria (Codecademy, Repositorios Interactivos)"
+}

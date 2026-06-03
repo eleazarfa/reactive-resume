@@ -1,0 +1,16 @@
+{
+  "actions": {
+    "title": "Interactive CV",
+    "switch_lang": "🇨🇷 Cambiar a Español",
+    "print": "🖨️ Export to PDF / Print CV"
+  },
+  "sections": {
+    "summary": "Professional Summary",
+    "experience": "Professional Experience",
+    "skills": "Technical Skills",
+    "languages": "Languages",
+    "learning": "Continuous Learning"
+  },
+  "summaryText": "Versatile and results-driven Software Engineer and UI/UX Specialist with over a decade of experience bridging the gap between exceptional visual design and scalable technical architecture. Proven track record of developing high-fidelity components for critical enterprise environments, including banking fraud prevention systems. Expert in React, TypeScript, and modern ecosystem tooling, focused on performance, product autonomy, and intuitive user experiences.",
+  "learningText": "Advanced Frontend Architecture & Logic Training - Industry Platforms (Codecademy, Interactive Repositories)"
+}
