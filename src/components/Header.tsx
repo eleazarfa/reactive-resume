@@ -20,17 +20,16 @@ export const Header: React.FC = () => {
     <header className="resume-header">
       <h1>{profile.name}</h1>
       <p className="subtitle">{profile.role}</p>
-      
-      <div className="contact-info">
+
+      <p className="contact-info">
         <a href={`mailto:${profile.email}`}>{profile.email}</a> | 
         <span> {profile.phone}</span> | 
         <span> {profile.location}</span>
-      </div>
-      
-      <div className="social-links">
-        <a href={profile.githubUrl} target="_blank" rel="noreferrer">GitHub</a> | 
-        <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
+      </p>
+
+      <p className="social-links">
+        <a href={profile.githubUrl} target="_blank" rel="noreferrer">GitHub</a> | <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">LinkedIn</a>
+      </p>
     </header>
   );
 };

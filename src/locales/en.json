@@ -1,16 +1,16 @@
 {
   "actions": {
-    "title": "CV Interactivo",
-    "switch_lang": "🇺🇸 Switch to English",
-    "print": "🖨️ Exportar a PDF / Imprimir"
+    "print": "PDF",
+    "verifyCredential": "Verify Credential",
+    "viewProfile": "View Profile"
   },
   "sections": {
-    "summary": "Resumen Profesional",
-    "experience": "Experiencia Profesional",
-    "skills": "Habilidades Técnicas",
-    "languages": "Idiomas",
-    "learning": "Aprendizaje Continuo"
+    "summary": "Professional Summary",
+    "experience": "Professional Experience",
+    "skills": "Technical Skills",
+    "languages": "Languages",
+    "learning": "Continuous Learning"
   },
-  "summaryText": "Ingeniero de Software y especialista en UI/UX versátil y orientado a resultados con más de una década de experiencia cerrando la brecha entre un diseño visual excepcional y arquitectura técnica escalable. Historial comprobado en el desarrollo de componentes de alta fidelidad para entornos empresariales críticos, incluyendo sistemas bancarios de prevención de fraudes. Experto en React, TypeScript y herramientas del ecosistema moderno, enfocado en rendimiento, autonomía de producto y experiencias de usuario intuitivas.",
-  "learningText": "Capacitación Avanzada en Arquitectura Frontend y Lógica - Plataformas de la Industria (Codecademy, Repositorios Interactivos)"
+  "summaryText": "Versatile and results-driven Software Engineer and UI/UX Specialist with over a decade of experience bridging the gap between exceptional visual design and scalable technical architecture. Proven track record of developing high-fidelity components for critical enterprise environments, including banking fraud prevention systems. Expert in React, TypeScript, and modern ecosystem tooling, focused on performance, product autonomy, and intuitive user experiences.",
+  "learningText": "Continuous training in Front-End Architecture and advanced logic through Codecademy learning paths."
 }

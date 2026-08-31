@@ -8,33 +8,33 @@ export const Experience: React.FC = () => {
   const [jobs, setJobs] = useState<JobResponse[]>([]);
 
   useEffect(() => {
-    const currentLang = i18n.language as 'en' | 'es';
+    const currentLang = i18n.resolvedLanguage?.startsWith('es') ? 'es' : 'en';
     const data = getExperienceFromBackend(currentLang);
     setJobs(data);
-  }, [i18n.language]);
+  }, [i18n.resolvedLanguage]);
 
   return (
-    <section className="cv-section">
+    <section className="resume-section">
       <h2>{t('sections.experience')}</h2>
-      <div className="timeline">
+      <div>
         {jobs.map((exp) => (
-          <div key={exp.id} className="cv-item">
-            <div className="item-header">
+          <article key={exp.id} className="cv-item">
+            <header className="item-header">
               <h3>{exp.role}</h3>
               <span className="date">{exp.period}</span>
-            </div>
-            
+            </header>
+
             <p className="company">
-              <strong>{exp.company.name}</strong> 
+              <strong>{exp.company.name}</strong>
               <span className="location"> — {exp.company.location}</span>
             </p>
-            
+
             <ul className="highlights-list">
               {exp.highlights.map((highlight, idx) => (
                 <li key={idx}>{highlight}</li>
               ))}
             </ul>
-          </div>
+          </article>
         ))}
       </div>
     </section>

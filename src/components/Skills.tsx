@@ -16,14 +16,14 @@ export const Skills: React.FC = () => {
   return (
     <section className="resume-section">
       <h2>{t('sections.skills')}</h2>
-      <div className="skills-grid">
+      <ul className="skills-list">
         {categories.map((cat) => (
-          <div key={cat.id} className="skill-card">
-            <strong>{cat.category}:</strong>
+          <li key={cat.id} className="skill-card">
+            <h3>{cat.category}</h3>
             <p>{cat.items.join(', ')}</p>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

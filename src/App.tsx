@@ -28,16 +28,23 @@ export const App: React.FC = () => {
 
         <Skills />
 
-        <div className="two-column-row">
-          <Languages />
+        <Languages />
 
-          <section className="resume-section half-width">
-            <h2>{t('sections.learning')}</h2>
-            <ul className="certifications-list">
-              <li>{t('learningText')}</li>
-            </ul>
-          </section>
-        </div>
+        <section className="resume-section">
+          <h2>{t('sections.learning')}</h2>
+          <ul className="certifications-list">
+            <li>
+              {t('learningText')}{' '}
+              <a
+                href="https://www.codecademy.com/profiles/eleazarfa"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t('actions.viewProfile')}
+              </a>
+            </li>
+          </ul>
+        </section>
       </main>
     </div>
   );

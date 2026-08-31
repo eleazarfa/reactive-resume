@@ -9,13 +9,13 @@ export const Languages: React.FC = () => {
   const [items, setItems] = useState<LanguageItemResponse[]>([]);
 
   useEffect(() => {
-    const currentLang = i18n.language as 'en' | 'es';
+    const currentLang = i18n.resolvedLanguage?.startsWith('es') ? 'es' : 'en';
     const data = getLanguagesFromBackend(currentLang);
     setItems(data);
-  }, [i18n.language]);
+  }, [i18n.resolvedLanguage]);
 
   return (
-    <section className="resume-section half-width">
+    <section className="resume-section">
       <h2>{t('sections.languages')}</h2>
       <ul className="languages-list">
         {items.map((lang) => (
@@ -23,7 +23,11 @@ export const Languages: React.FC = () => {
             <strong>{lang.name}:</strong> {lang.level}
             {lang.credentialUrl && (
               <span className="credential-link">
-                {" "}(<a href={lang.credentialUrl} target="_blank" rel="noreferrer">Verify Credential</a>)
+                {' '}(
+                <a href={lang.credentialUrl} target="_blank" rel="noreferrer">
+                  {t('actions.verifyCredential')}
+                </a>
+                )
               </span>
             )}
           </li>
